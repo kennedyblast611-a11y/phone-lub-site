@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PHONE LAB — генератор виртуальных номеров</title>
+<meta name="description" content="PHONE LAB — коллекционируй редкие виртуальные номера, открывай кейсы и участвуй в рынке.">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#07070b;color:#f7f7fb;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 10%,#632cff24,transparent 34%),radial-gradient(circle at 10% 70%,#00d9ff12,transparent 30%);z-index:-1}
+a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 20px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff10;backdrop-filter:blur(12px)}
+.logo{font-weight:1000;letter-spacing:3px;font-size:20px}.logo span{color:#9d67ff}.navlinks{display:flex;gap:22px;color:#aaaab6;font-size:14px}.navlinks a:hover{color:white}
+.hero{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:70px 0}
+.kicker{color:#9d67ff;font-weight:900;letter-spacing:3px;font-size:12px}.hero h1{font-size:clamp(48px,8vw,88px);line-height:.9;margin:14px 0 20px;letter-spacing:-4px}.hero h1 span{color:#9d67ff;text-shadow:0 0 40px #7c3cff66}.hero p{color:#a8a8b4;font-size:18px;line-height:1.65;max-width:580px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 22px;border-radius:14px;font-weight:900;border:1px solid #ffffff16;background:#15151d}.btn.primary{background:linear-gradient(135deg,#8b4dff,#5e2de2);box-shadow:0 12px 35px #7b3cff35}.btn:hover{transform:translateY(-2px)}
+.phone{height:480px;max-width:300px;margin:auto;border:7px solid #24242d;border-radius:42px;background:linear-gradient(145deg,#15151c,#09090d);box-shadow:0 0 0 1px #55556a,0 35px 90px #000;position:relative;padding:42px 20px 20px;transform:rotate(4deg)}
+.phone:after{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:105px;height:24px;border-radius:20px;background:#020205}
+.screen{height:100%;border-radius:27px;background:radial-gradient(circle at 50% 15%,#642eff55,transparent 32%),#0c0c13;padding:26px 18px}.screen .mini{color:#9d67ff;font-weight:900;letter-spacing:2px;font-size:11px}.number{font-size:25px;font-weight:1000;margin:55px 0 12px}.rarity{display:inline-block;border:1px solid #ffffff22;padding:7px 10px;border-radius:9px;font-size:11px;color:#d8c9ff}.scan{height:5px;background:#22222c;border-radius:5px;margin-top:55px;overflow:hidden}.scan i{display:block;width:68%;height:100%;background:#9d67ff;box-shadow:0 0 18px #9d67ff}
+section{padding:80px 0}.title{text-align:center;margin-bottom:38px}.title h2{font-size:38px;margin:0 0 10px}.title p{color:#858591;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#101017;border:1px solid #ffffff0e;border-radius:20px;padding:26px;min-height:170px}.icon{font-size:28px}.card h3{margin:14px 0 8px}.card p{color:#858591;line-height:1.55;margin:0}
+.event{border:1px solid #9d67ff35;background:linear-gradient(135deg,#181021,#0d0d13);border-radius:28px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:0 20px 70px #6e35ff12}.event h2{margin:0 0 8px;font-size:32px}.event p{color:#aaa;margin:0}.bonus{font-size:34px;font-weight:1000;color:#b78aff;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:24px;border-radius:18px;background:#101017;border:1px solid #ffffff0e;text-align:center}.stat b{display:block;font-size:28px}.stat span{color:#777783;font-size:12px}
+footer{border-top:1px solid #ffffff10;padding:35px 0;color:#777783}.footerin{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:45px}.phone{height:420px;max-width:270px}.cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.event{flex-direction:column;align-items:flex-start}.bonus{font-size:28px}.hero h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">PHONE <span>LAB</span></div><div class="navlinks"><a href="#about">Об игре</a><a href="#event">Событие</a><a href="#download">Скачать</a></div></nav>
+
+<main>
+<section class="hero">
+<div>
+<div class="kicker">ВИРТУАЛЬНЫЕ НОМЕРА • КОЛЛЕКЦИЯ • РЫНОК</div>
+<h1>PHONE <span>LAB</span></h1>
+<p>Собирай редкие виртуальные номера, открывай кейсы, прокачивай коллекцию и продавай лучшие находки на рынке.</p>
+<div class="buttons" id="download"><a class="btn primary" href="PHONE_LAB.apk" download>📱 СКАЧАТЬ APK</a><a class="btn" href="#about">УЗНАТЬ БОЛЬШЕ</a></div>
+</div>
+<div class="phone"><div class="screen"><div class="mini">PHONE LAB</div><div class="number">+7 ••• ••• •• ••</div><div class="rarity">★ LEGENDARY</div><div class="scan"><i></i></div></div></div>
+</section>
+
+<section id="about"><div class="title"><h2>Что тебя ждёт</h2><p>Главные системы PHONE LAB</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📱</div><h3>Генерация номеров</h3><p>Создавай новые виртуальные номера и охоться за редкими вариантами.</p></div>
+<div class="card"><div class="icon">💎</div><h3>Коллекция</h3><p>Собирай номера разных редкостей и следи за стоимостью своей коллекции.</p></div>
+<div class="card"><div class="icon">🏪</div><h3>Рынок</h3><p>Выставляй свои лучшие номера на продажу и покупай находки других игроков.</p></div>
+<div class="card"><div class="icon">🎁</div><h3>Кейсы</h3><p>Открывай кейсы и проверяй удачу ради более редких номеров.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Задания</h3><p>Выполняй игровые задачи и получай дополнительные награды.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>Достижения</h3><p>Собирай достижения и развивай свой профиль в PHONE LAB.</p></div>
+</div></section>
+
+<section id="event"><div class="event"><div><h2>🐦 Пятничный рынок</h2><p>Событие проходит каждую пятницу. Прямо сейчас идёт бонусное событие!</p></div><div class="bonus">+20% к продаже</div></div></section>
+
+<section><div class="title"><h2>PHONE LAB в цифрах</h2><p>Собирай. Торгуй. Развивайся.</p></div>
+<div class="stats"><div class="stat"><b>📱</b><span>ВИРТУАЛЬНЫЕ НОМЕРА</span></div><div class="stat"><b>🏪</b><span>РЫНОК</span></div><div class="stat"><b>🎁</b><span>КЕЙСЫ</span></div><div class="stat"><b>🏆</b><span>ДОСТИЖЕНИЯ</span></div></div></section>
+</main>
+
+<footer><div class="footerin"><div>© 2026 PHONE LAB</div><div>Сайт игры • Android APK</div></div></footer>
+</div>
+</body>
+</html>
